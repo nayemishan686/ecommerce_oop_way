@@ -1,4 +1,4 @@
-//This code link up with template.php in 820 line of template.php
+<!-- This code link up with template.php in 820 line of template.php -->
 
 <!-- Required Jquery -->
 <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
