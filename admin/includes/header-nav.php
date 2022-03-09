@@ -1,4 +1,4 @@
-<!-- This code link up with template.php in 21 line of template.php -->
+<!-- This code link up with template.php in 16 line of template.php -->
 <nav class="navbar header-navbar pcoded-header">
                <div class="navbar-wrapper">
                    <div class="navbar-logo">
