@@ -16,7 +16,7 @@
                                </div>
                            </div>
                        </div>
-                       <a href="index.html">
+                       <a href="dashboard.php">
                            <img class="img-fluid" src="assets/images/nayem.png" alt="Theme-Logo" />
                        </a>
                        <a class="mobile-options">

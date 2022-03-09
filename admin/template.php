@@ -25,10 +25,28 @@
                                     <div class="page-body">
                                       <div class="row">
 
-                                      <?php include_once("views/dashboard-views.php"); ?>
-                                            
-
-                                            
+                                      <?php 
+                                            if($views){
+                                                if($views == "dashboard"){
+                                                    require_once("views/dashboard-views.php");
+                                                }else if($views == "add-category"){
+                                                    require_once("views/add-category-views.php");
+                                                }else if($views == "edit-category"){
+                                                    require_once("views/edit-category-views.php");
+                                                }else if($views == "add-product"){
+                                                    require_once("views/add-product-views.php");
+                                                }else if($views == "edit-product"){
+                                                    require_once("views/edit-product-views.php");
+                                                }else if($views == "add-user"){
+                                                    require_once("views/add-user-views.php");
+                                                }else if($views == "manage-user"){
+                                                    require_once("views/manage-user-views.php");
+                                                }
+                                            }
+                                                
+                                       
+                                      ?>      
+                                      
                                     </div>
                                 </div>
                             </div>
