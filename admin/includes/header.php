@@ -1,3 +1,4 @@
+//This code link up with template.php in 1st line of template.php
 <!DOCTYPE html>
 <html lang="en">
 
