@@ -91,7 +91,7 @@
                            <li class="user-profile header-notification">
                                <a href="#!">
                                    <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                   <span>John Doe</span>
+                                   <span><?php echo $adminEmail; ?></span>
                                    <i class="ti-angle-down"></i>
                                </a>
                                <ul class="show-notification profile-notification">
@@ -112,7 +112,7 @@
                                        </a>
                                    </li>
                                    <li>
-                                       <a href="auth-normal-sign-in.html">
+                                       <a href="?adminLogout=logout">
                                        <i class="ti-layout-sidebar-left"></i> Logout
                                    </a>
                                    </li>
