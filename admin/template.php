@@ -2,14 +2,14 @@
 <?php include_once("includes/header.php"); ?>
 <?php 
     session_start();
-    $adminEmail = $_SESSION['admin_email'];
-    if($_SESSION['id'] == null) {
+    $adminId = $_SESSION['admin_id'];
+    if($adminId == null) {
         header("Location: index.php");
     }
 
     if(isset($_GET['adminLogout'])) {
         $obj_admin = new Admin();
-        $obj_admin -> adminLogout();
+        $obj_admin -> admin_Logout();
     }
 ?>
   <body>

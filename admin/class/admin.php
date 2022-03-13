@@ -18,25 +18,33 @@ class Admin{
   function adminLogin($data) {
     $admin_email = $data['admin_email'];
     $admin_password = md5($data['admin_password']);
-    $query = "SELECT * FROM admin_panel WHERE admin_email = '$admin_email' AND admin_password = '$admin_password'";
-    if(mysqli_query($this->conn,$query)){
-      $result = mysqli_query($this->conn,$query);
-      $admin_info = mysqli_fetch_assoc($result);
 
-      if($admin_info){
+    $query = "SELECT * FROM `admin_panel` WHERE `admin_email`= '$admin_email' AND `admin_password`= '$admin_password'";
+
+    if(mysqli_query($this->conn, $query)){
+      $result = mysqli_query($this->conn, $query);
+      $admin_details = mysqli_fetch_assoc($result);
+      if($admin_details){
         header("location: dashboard.php");
         session_start();
-        $_SESSION['id'] = $admin_info['id'];
-        $_SESSION['admin_email'] = $admin_info['admin_email'];
+        $_SESSION['admin_id'] = $admin_details['id'];
+        $_SESSION['admin_email'] = $admin_details['admin_email'];
       }else{
-        $errorMsg = "You email or password is incorrect";
-        return $errorMsg;
+        echo "wrong email or password";
       }
     }
   }
 
-  function adminLogout(){
+  function admin_Logout() {
     session_destroy();
     header("location: index.php");
   }
+
+  
 }
+
+
+// function adminLogout(){
+//   session_destroy();
+//   header("location: index.php");
+// }
