@@ -40,11 +40,22 @@ class Admin{
     header("location: index.php");
   }
 
+  function add_category($data){
+    $ctgName = $data['ctgName'];
+    $ctgDescription = $data['ctgDescription'];
+    $ctgStatus = $data['ctgStatus'];
+
+    $query = "INSERT INTO `product_category`(`ctg_name`, `ctg_descrip`, `ctg_status`) VALUES ('$ctgName','$ctgDescription','$ctgStatus')";
+
+    if(mysqli_query($this->conn, $query)){
+      $msg =  "Product Category Added Successfully";
+      return $msg;
+    }else{
+      $msg =  "Product Category can't added";
+      return $msg;
+    }
+
+  }
+
   
 }
-
-
-// function adminLogout(){
-//   session_destroy();
-//   header("location: index.php");
-// }

@@ -35,7 +35,7 @@
                                 <div class="page-wrapper">
 
                                     <div class="page-body">
-                                      <div class="row">
+                                      
 
                                       <?php 
                                             if($views){
@@ -59,7 +59,7 @@
                                        
                                       ?>      
                                       
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
