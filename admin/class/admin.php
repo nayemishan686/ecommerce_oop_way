@@ -54,7 +54,23 @@ class Admin{
       $msg =  "Product Category can't added";
       return $msg;
     }
+  }
 
+
+  function add_admin($datam){
+    $adminName = $datam['adminName'];
+    $adminEmail = $datam['adminEmail'];
+    $adminPassword = md5($datam['adminPass']);
+
+    $query = "INSERT INTO `admin_panel`(`admin_username`, `admin_email`, `admin_password`) VALUES ('$adminName','$adminEmail','$adminPassword')";
+
+    if(mysqli_query($this->conn, $query)){
+      $admin_msg = "User added successfully";
+      return $admin_msg;
+    }else{
+      $admin_msg = "user can not be added";
+      return $admin_msg;
+    }
   }
 
   
