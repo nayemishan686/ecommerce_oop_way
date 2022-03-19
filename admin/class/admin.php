@@ -57,6 +57,15 @@ class Admin{
   }
 
 
+  function displayCategory(){
+    $query = "SELECT * FROM product_category";
+    if(mysqli_query($this->conn, $query)){
+      $displayCategoryMsg = mysqli_query($this->conn, $query);
+      return $displayCategoryMsg;
+    }
+  }
+
+
   function add_admin($datam){
     $adminName = $datam['adminName'];
     $adminEmail = $datam['adminEmail'];
@@ -72,6 +81,9 @@ class Admin{
       return $admin_msg;
     }
   }
+
+
+
 
   
 }
