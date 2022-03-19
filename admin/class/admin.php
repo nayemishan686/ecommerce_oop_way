@@ -83,7 +83,13 @@ class Admin{
   }
 
 
-
+  function displayUsers(){
+    $query = "SELECT * FROM admin_panel";
+    if(mysqli_query($this->conn, $query)){
+      $displayAdminMsg = mysqli_query($this->conn, $query);
+      return $displayAdminMsg;
+    }
+  }
 
   
 }

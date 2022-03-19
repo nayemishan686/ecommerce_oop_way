@@ -44,11 +44,11 @@
                                                 }else if($views == "add-category"){
                                                     require_once("views/add-category-views.php");
                                                 }else if($views == "edit-category"){
-                                                    require_once("views/edit-category-views.php");
+                                                    require_once("views/manage-category-views.php");
                                                 }else if($views == "add-product"){
                                                     require_once("views/add-product-views.php");
                                                 }else if($views == "edit-product"){
-                                                    require_once("views/edit-product-views.php");
+                                                    require_once("views/manage-product-views.php");
                                                 }else if($views == "add-user"){
                                                     require_once("views/add-user-views.php");
                                                 }else if($views == "manage-user"){

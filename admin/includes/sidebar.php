@@ -29,9 +29,9 @@
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="edit-category.php">
+                                            <a href="manage-category.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Edit Category</span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Manage Category</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
@@ -54,9 +54,9 @@
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="edit-product.php">
+                                            <a href="manage-product.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Edit Product</span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Manage Product</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
@@ -81,7 +81,7 @@
                                         <li class=" ">
                                             <a href="manage-user.php">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Edit User</span>
+                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Manage User</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
